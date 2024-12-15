@@ -4,13 +4,6 @@ body, html {
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
 }
 
 h2 {
@@ -19,53 +12,65 @@ h2 {
     color: #333;
 }
 
-/* Header */
-.header-background {
-    background-color: #0D1B1E;
-    color: #fff;
-    padding: 10px 20px;
+/* Navigation */
+header {
+    background: #111;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 20px;
 }
 
-.header-background .logo img {
+header .logo img {
     height: 50px;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
 
-/* Header Image */
-.header-image img {
+/* Image d'en-tête */
+.header-image-container {
+    position: relative;
     width: 100%;
-    height: auto;
-    display: block;
+    height: 400px;
 }
 
-/* Sections */
-.section {
-    margin: 20px auto;
-    padding: 20px;
-    text-align: center;
+.header-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.produits {
+.slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Produits */
+.section .produits {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
+    padding: 0 20px;
 }
 
 .produit {
@@ -73,9 +78,8 @@ nav ul li a {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 250px;
-    text-align: center;
     padding: 15px;
-    transition: transform 0.2s ease;
+    transition: transform 0.2s;
 }
 
 .produit img {
@@ -89,48 +93,40 @@ nav ul li a {
     transform: scale(1.05);
 }
 
+/* Avis Clients */
 .avis {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
 }
 
 .avis-item img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
     border-radius: 50%;
 }
 
 .avis-item p {
+    text-align: center;
     margin-top: 10px;
     font-style: italic;
-    color: #555;
 }
 
 /* Footer */
 footer {
-    background-color: #0D1B1E;
+    background: #111;
     color: white;
-    padding: 20px;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
     display: flex;
     justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
-    text-align: center;
 }
 
 .footer-logo img {
-    width: 80px;
-    margin: 10px;
-}
-
-footer nav a {
-    color: #FFD700;
-    margin: 0 10px;
-    font-weight: bold;
-}
-
-footer p {
-    margin: 0;
+    width: 100px;
 }
