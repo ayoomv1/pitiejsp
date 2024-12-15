@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Art - Accueil</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Barre de navigation */
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        header .logo img {
+            width: 80px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Image d'en-tête */
+        .header-image-container {
+            position: relative;
+            width: 100%;
+            height: 400px;
+        }
+
+        .header-image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .slogan {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 2.5em;
+            font-weight: bold;
+            font-style: italic;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Sections */
+        section {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .produits {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .produit, .avis-item {
+            width: 220px;
+            text-align: center;
+        }
+
+        .produit img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Section Avis Clients */
+        .avis {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .avis-item img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Cercle */
+            object-fit: cover;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #111;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-logo img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barre de Navigation -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo de la galerie">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#nouveautes">Nouveautés</a></li>
+                <li><a href="#peintures">Peintures</a></li>
+                <li><a href="#sculptures">Sculptures</a></li>
+                <li><a href="#avis">Avis Clients</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Image d'en-tête -->
+    <div class="header-image-container">
+        <img src="images/noel.png" alt="Image d'en-tête de Noël">
+        <div class="slogan">"Un Noël d'art et d'émotion, unique en son genre."</div>
+    </div>
+
+    <!-- Section Nouveautés -->
+    <section id="nouveautes">
+        <h1>Nouveautés</h1>
+        <div class="produits">
+            <div class="produit"><img src="images/P1.webp" alt="Géométrie Épure"><p><strong>Géométrie Épure</strong></p><span>7 500€</span></div>
+            <div class="produit"><img src="images/P2.webp" alt="Élan Fluide"><p><strong>Élan Fluide</strong></p><span>6 800€</span></div>
+        </div>
+    </section>
+
+    <!-- Section Avis Clients -->
+    <section id="avis">
+        <h2>Avis de Nos Clients</h2>
+        <div class="avis">
+            <div class="avis-item"><img src="images/C1.webp" alt="Client 1"><p>"Une expérience exceptionnelle."</p></div>
+            <div class="avis-item"><img src="images/C2.webp" alt="Client 2"><p>"Des œuvres magnifiques."</p></div>
+            <div class="avis-item"><img src="images/C3.webp" alt="Client 3"><p>"Service impeccable."</p></div>
+            <div class="avis-item"><img src="images/C4.webp" alt="Client 4"><p>"Un service parfait."</p></div>
+        </div>
+    </section>
+
+    <!-- Section Peintures -->
+    <section id="peintures">
+        <h2>Nos Peintures</h2>
+        <div class="produits">
+            <div class="produit"><img src="images/P3.webp" alt="Ligne Seule"><p><strong>Ligne Seule</strong></p><span>4 900€</span></div>
+            <div class="produit"><img src="images/LLARBI.webp" alt="Sérénité de Vie"><p><strong>Sérénité de Vie</strong></p><span>3 500€</span></div>
+            <div class="produit"><img src="images/P2.webp" alt="Élan Fluide"><p><strong>Élan Fluide</strong></p><span>6 800€</span></div>
+        </div>
+    </section>
+
+    <!-- Section Sculptures -->
+    <section id="sculptures">
+        <h2>Nos Sculptures</h2>
+        <div class="produits">
+            <div class="produit"><img src="images/RYTHMEINFINI.webp" alt="Rythme Infini"><p><strong>Rythme Infini</strong></p><span>7 000€</span></div>
+            <div class="produit"><img src="images/P3.webp" alt="Silhouette Ondulée"><p><strong>Silhouette Ondulée</strong></p><span>6 300€</span></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div><h4>ADRESSE</h4><p>12 rue de l'Art Moderne, 06000 Nice</p></div>
+            <div><h4>COURRIEL</h4><p>contact@nomduartiste.fr</p></div>
+            <div><h4>TÉLÉPHONE</h4><p>+33 4 93 00 00 00</p></div>
+            <div class="footer-logo"><img src="images/logo.png" alt="Logo de la galerie"></div>
+        </div>
+    </footer>
+
+</body>
+</html>
